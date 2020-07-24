@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팔레드시즈 리뉴얼</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body class="scrolltriger">
+    <div id="wrap">
+        <!-- 헤더영역 -->
+        <header>
+            <div class="top_menu">
+                <ul class="top_nav container">
+                    <li><a href="#">예약조회</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">한국어</a></li>
+                </ul>
+            </div>
+            <div class="header_inner container">
+                <h1 class="logo"><a href="index.html">팔레드시즈</a></h1>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="#">팔레드시즈 소개</a></li>
+                        <li><a href="#">객실안내</a></li>
+                        <li><a href="#">예약안내</a></li>
+                        <li><a href="#">부대시설</a></li>
+                        <li><a href="#">주변관광지</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav>
+                <button class="reBtn">예약하기</button>
+            </div>
+            <div class="subMenu cfixed">
+                <div class="sub_inner">
+                    <ul>
+                        <li><a href="#">컨셉</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">VIP(70)</a></li>
+                        <li><a href="#">79PY</a></li>
+                        <li><a href="#">측면70PY</a></li>
+                        <li><a href="#">67PY</a></li>
+                        <li><a href="#">50PY</a></li>
+                        <li><a href="#">36PY</a></li>
+                        <li><a href="#">15PY</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">예약접수</a></li>
+                        <li><a href="#">객실요금안내</a></li>
+                        <li><a href="#">단체행사안내</a></li>
+                        <li><a href="#">객실내 제품사용법</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Terrace Lounge</a></li>
+                        <li><a href="#">Sports Center</a></li>
+                        <li><a href="#">Lobby Lounge</a></li>
+                        <li><a href="#">Seminar Room</a></li>
+                        <li><a href="#">Retail Arcade</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">해운대12경</a></li>
+                        <li><a href="#">해운대야경7선</a></li>
+                        <li><a href="#">여행캘린더</a></li>
+                        <li><a href="#">추천여행지</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">News&Notice</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Q&A</a></li>
+                        <li><a href="#">포토콘테스트</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- 헤더 끝 -->
+
+        <!-- 슬라이드 영역 -->
+        <section class="slider swiper-container">
+            <div class="slider_inner swiper-wrapper">
+                <div class="swiper-slide"><img src="images/bg02.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/bg03.png" alt=""></div>
+                <img class="imgTxt" src="images/bg_text.png" alt="해운대의 바다,하늘 팔레드시즈" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
+            </div>
+        </section>
+        <!-- 슬라이드 끝 -->
+
+        <!-- 예약영역 -->
+        <section class="reservation">
+            <div class="container">
+                <div class="reservation_inner" data-scroll="toggle(.fromTopIn, .fromTopOut)">
+                    <ul>
+                        <li class="checkIn">
+                            <span>체크인</span>
+                            <input type="text" id="datepicker_today"></li>
+                        </li>
+                        <li class="stayDay">
+                            <span></span>
+                            <input type="text" class="stay" disabled>
+                        </li>
+                        <li class="checkOut">
+                            <span>체크아웃</span>
+                            <input type="text" id="datepicker_checkOutDay">
+                        </li>
+                        <li class="rom">
+                            <span>객실</span>
+                            <select name="" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </li>
+                        <li class="adult">
+                            <span>성인</span>
+                            <select name="" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select> 
+                        </li>
+                        <li class="child">
+                            <span>어린이</span>
+                            <select name="" id="">
+                                <option value="0">0</option>
+                                <option value="0">1</option>
+                                <option value="0">2</option>
+                            </select> 
+                        </li>
+                        <li class="baby">
+                            <span>유아</span>
+                            <select name="" id="">
+                                <option value="0">0</option>
+                                <option value="0">1</option>
+                                <option value="0">2</option>
+                            </select> 
+                        </li>
+                        <li class="search">
+                            <button>검색</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- 예약 끝 -->
+
+        <!-- 스페셜오퍼 영역 -->
+        <section class="offer">
+            <div class="offer_inner container">
+                <div class="offer_title">
+                    <h2 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">팔레드시즈 스페셜오퍼</h2>
+                    <span data-scroll="toggle(.fromBottomIn, .fromBottomOut)">PALE DE CZ SPECIAL OFFERS</span>
+                </div>
+                <div class="offer_card">
+                    <ul>
+
+                        <li class="card_body" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+                            <a href="#">
+                                <img src="images/offer-01.png" alt="">
+                                <p>
+                                    <strong>침구 무료제공 이벤트</strong>
+                                    <span>15PY(Superior Room) 더블/트윈 투숙하시는 고객님</span>
+                                    <span>2020년 6월 30일 까지</span>
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="card_body" data-scroll="toggle(.fromTopIn, .fromTopOut)"">
+                            <a href="#">
+                                <img src="images/offer-02.png" alt="">
+                                <p>
+                                    <strong>팔레드시즈 VIP 연간이용권</strong>
+                                    <span>
+                                        15PY(Superior Room) 더블/트윈 투숙하시는 고객님
+                                        
+                                    </span>
+                                    <span>2020년 6월 30일 까지</span>
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="card_body" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+                            <a href="#">
+                                <img src="images/offer-03.png" alt="">
+                                <p>
+                                    <strong>팔레드시즈 투숙객 할인혜택</strong>
+                                    <span>15PY(Superior Room) 더블/트윈 투숙하시는 고객님
+                                    </span>
+                                    <span>2020년 6월 30일 까지</span>
+                                </p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- 스페셜 끝 -->
+
+        <div class="bg01" data-scroll="toggle(.fromBottomIn, .fromBottomOut)"></div>
+
+        <!-- 소개영역 -->
+        <section class="info">
+            <div class="container">
+                <div class="offer_info">
+                    <h2 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">팔레드시즈 소개</h2>
+                    <span data-scroll="toggle(.fromBottomIn, .fromBottomOut)">PALE DE CZ INFO</span>
+                </div>
+                <div class="info_inner cfixed">
+                    <div class="room" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
+                        <p>
+                            펜트하우스 141PY<br>
+                            <span>침대타입 더블 X 3EA | 투숙인원  12명 (최대14명)</span>
+                        </p>
+                        <a href="#">
+                            <img src="images/room.png" alt="방소개">
+                        </a>
+                    </div>
+                    <div class="etc" data-scroll="toggle(.fromRightIn, .fromRightOut)">
+                        <a href="#" class="etc01">
+                            <img src="images/tour.png" alt="주변관광지">
+                            <div class="overlay">
+                                <p class="txt">주변관광지</p>
+                            </div>
+                        </a>
+                        <a href="#" class="etc02">
+                            <img src="images/budae.png" alt="부대시설">
+                            <div class="overlay02">
+                                <p class="txt02">부대시설</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="intro">
+                        <div class="pale" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+                            <h3>팔레드시즈</h3>
+                            <p>
+                                프랑스어 궁전을 뜻하는 팔레와 바다,보다를 뜻하는 시즈를 결합한 브랜드로<br>
+                                최고의 상류층만이 향유할 수 있는 고품격 휴양공간을 의미합니다.<br>
+                                세계적인 문화 휴양도시, 컨벤션 영상해양레져도시로 발돋움 하고있는 해운대에 위치한
+                                팔레드시즈는 뛰어난 조망권을 갖춘 프리미엄입니다.<br>
+                                <span>부산광역시 해운대구 중1동 해운대해변로 29번길 24</span>
+                            </p>
+                            <ul class="wTime">
+                                <li>Free WIFI</li>
+                                <li>입실시간 15:00   |   퇴실시간 11:00</li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="images/트립어드.png" alt="트립어드바이저"></a>
+                                </li>
+                                <li>
+                                    <img src="images/rating.png" alt="평점">
+                                    <span>40개 리뷰</span>
+                                </li>
+                                
+                            </ul>
+                            
+                        </div>
+
+                        <div class="map" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.8526521039666!2d129.1644006150929!3d35.16029536597231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35688d4a9e6f70a1%3A0x4451e6cef7343ca7!2z7YyU66CI65Oc7Iuc7KaI!5e0!3m2!1sko!2skr!4v1595475415879!5m2!1sko!2skr" width="630" height="314" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- 소개끝 -->
+
+        <div class="bg02"></div>
+
+        <!-- sns영역 -->
+        <section class="sns">
+            <div class="container">
+                <div class="sns_inner">
+                    <ul data-scroll="toggle(.fromTopIn, .fromTopOut)">
+                        <li><a href="#"><img src="images/sns_01.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/img-01.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/img-02.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/img-03.png" alt=""></a></li>
+                        
+                    </ul>
+                    <ul data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+                        <li><a href="#"><img src="images/img-04.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/img-05.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/img-06.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/img-07.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- sns 끝 -->
+
+        <!-- footer 영역 -->
+        <footer class="footer">
+            <div class="container">
+
+                <div class="footer_inner">
+
+                    <div class="r_menu">
+                        <h1><a href="#"><img src="images/footer-logo.png" alt=""></a></h1>
+                        <ul>
+                            <li>팔레드시즈</li>
+                            <li>부산광역시 해운대구 해운대해변로 298번길 24 사업자등록번호 : 617-85-26523 대표 : 안광현</li>
+                            <li>Copyright (c) PALE DE CZ. All Rights Reserved.</li>
+                        </ul>
+                    </div>
+
+                    <div class="l_menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">팔레드시즈 소개</a></li>
+                                <li><a href="#">고객문의</a></li>
+                                <li><a href="#">사이트맵</a></li>
+                            </ul>
+                        </nav>
+                        <ul class="snsBtns">
+                            <li><a href="#">인스타그램</a></li>
+                            <li><a href="#">페이스북</a></li>
+                            <li><a href="#">유튜브</a></li>
+                            <li><a href="#">네이버 블로그</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+        <!-- footer 끝 -->
+
+        <!-- topBtn -->
+        <div class="topBtn">
+            <a href="#"><img src="images/totop.png" alt="top버튼"></a>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- datepicker -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- 날씨 포맷 변경 js -->
+    <script src="js/datepicker-ko.js"></script>
+    <!-- scrollTrigger -->
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script>
+        // ScrollTrigger
+        document.addEventListener('DOMContentLoaded', function () {
+            var trigger = new ScrollTrigger({
+                addHeight: true
+            });
+        });
+        // swiper
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            effect: 'fade',
+            centeredSlides: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>
