@@ -13,4 +13,4 @@
 4. scrollTrigger 구현 
 
 <br><br>
-<img src="https://github.com/kimjihun-dev/pale_de_cz/blob/master/%ED%8C%94%EB%A0%88%EB%93%9C%EC%8B%9C%EC%A6%88.jpg" width=70%>
+<img src="https://github.com/kimjihun-dev/pale_de_cz/blob/master/%ED%8C%94%EB%A0%88%EB%93%9C%EC%8B%9C%EC%A6%88.jpg" width=100%>
