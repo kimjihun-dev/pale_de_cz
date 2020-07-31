@@ -5,6 +5,7 @@
 #### 기간 : 3day
 #### 사용언어 : HTML5, CSS3, jQuery, js
 #### 사용툴 : Photoshop, Zeplin, vscode
+#### 웹디자인, 퍼블리싱
 #### demo site : https://kimjihun-dev.github.io/pale_de_cz/
 
 1. swiper 를 이용한 슬라이드
